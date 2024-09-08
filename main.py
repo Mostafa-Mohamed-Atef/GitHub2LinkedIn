@@ -4,11 +4,7 @@ import pyperclip
 
 def generate_post(readme_content, project_name, repo_url):
     summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
-    
-    # Summarize the README content
     summary = summarizer(readme_content, max_length=150, min_length=50, do_sample=False)[0]['summary_text']
-    
-    # Create a LinkedIn post template
     linkedin_post = f"""Excited to share my latest project: {project_name}! 🚀
 
 {summary}
