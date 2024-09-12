@@ -19,7 +19,7 @@ auth = Auth.Token("your token")
 
 try:
     with Github(auth=auth) as g:
-        repo = g.get_repo("your repository")
+        repo = g.get_repo("username/repository")
         readme_content = repo.get_readme().decoded_content.decode()
         project_name = repo.name
         repo_url = repo.html_url
@@ -29,5 +29,6 @@ try:
         print("Want to copy the post to clipboard? (y/n)")
         if input() == "y":
             pyperclip.copy(linkedin_post)
+            print("Copied to clipboard")
 except Exception as e:
     print(f"An error occurred: {e}")
