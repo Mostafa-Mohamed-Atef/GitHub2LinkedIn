@@ -1,7 +1,8 @@
 # GitHub2Linkedin
-(![image](https://github.com/user-attachments/assets/b592f511-77d1-41e5-940f-cb6adcaadbc9)
-
 Generate engaging LinkedIn posts from your GitHub project README files with ease!
+
+![image](https://github.com/user-attachments/assets/b592f511-77d1-41e5-940f-cb6adcaadbc9)
+
 
 ## Try it out
 
